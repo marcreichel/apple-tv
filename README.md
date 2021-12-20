@@ -4,6 +4,8 @@
 
 This is an experimental implementation of my [apple-tv-card](https://github.com/marcreichel/apple-tv-card) project.
 
+![Screenshot](docs/screenshot.png)
+
 ## Features
 
 - Hover animation of the apps (thanks to my [apple-tv-card](https://github.com/marcreichel/apple-tv-card) package)
