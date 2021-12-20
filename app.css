@@ -1,0 +1,130 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1vmax;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, #f1f1f1, #bbb);
+    color: #111;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: linear-gradient(to bottom, #333, #111);
+        color: #eee;
+    }
+}
+
+.grid {
+    margin: .5vw;
+    position: relative;
+}
+
+.grid .item {
+    display: block;
+    position: absolute;
+    width: calc(20% - 2vw);
+    margin: .5vw 1vw;
+    z-index: 1;
+}
+
+.header {
+    background: #5555;
+    border-radius: min(max(2vmax, 2rem), 3rem);
+    backdrop-filter: blur(3vmax);
+    margin: 1.5vw 1.5vw 2.5vw;
+    position: relative;
+    padding: .4vw 0;
+}
+
+.header .grid .apple-tv-card-container, .muuri-item-dragging .apple-tv-card-container {
+    padding-bottom: 0 !important;
+}
+
+.header .grid .apple-tv-card-container .apple-tv-card-title {
+    display: none !important;
+}
+
+.muuri-item-dragging .apple-tv-card-container {
+    position: relative;
+}
+
+.muuri-item-positioning {
+    z-index: 5000;
+}
+
+.muuri-item-dragging .apple-tv-card-container .apple-tv-card-title {
+    position: absolute;
+    top: 100%;
+}
+
+.header .item {
+    margin: .5vw 1vw;
+}
+
+.body {
+    margin: 1.5vw;
+}
+
+.item.muuri-item-dragging {
+    z-index: 3;
+}
+
+.item.muuri-item-releasing {
+    z-index: 2;
+}
+
+.item.muuri-item-hidden {
+    z-index: 0;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+    33% {
+        transform: rotate(-1.5deg);
+    }
+    66% {
+        transform: rotate(1.5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.grid .item .item-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.apple-tv-card > a.content {
+    display: block;
+    padding-bottom: 58%;
+}
+
+.apple-tv-card-container {
+    position: relative;
+}
+
+.apple-tv-card-container > .card-title {
+    position: absolute;
+    top: 110%;
+    right: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+}
+
+.apple-tv-card-container:hover > .card-title {
+    opacity: 1;
+}
