@@ -1,8 +1,0 @@
-Authors ordered by first contribution.
-
-Niklas Rämö <inramo@gmail.com>
-Indigane <https://github.com/indigane>
-Jason Holland <https://github.com/jholland918>
-Aslak Hellesøy <https://github.com/aslakhellesoy>
-Makhambet Adiyetov <https://github.com/stat92>
-Alexis Rouillard <https://github.com/Alexays>

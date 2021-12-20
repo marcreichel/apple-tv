@@ -8,10 +8,5 @@
     "name": "Marc Reichel",
     "url": "https://marcreichel.dev"
   },
-  "license": "MIT",
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.3",
-    "apple-tv-card": "^0.8.1",
-    "muuri": "^0.9.4"
-  }
+  "license": "MIT"
 }
