@@ -45,6 +45,10 @@ body {
     padding: .4vw 0;
 }
 
+.item.muuri-item:hover {
+    z-index: 9999;
+}
+
 .header .grid .apple-tv-card-container, .muuri-item-dragging .apple-tv-card-container {
     padding-bottom: 0 !important;
 }
