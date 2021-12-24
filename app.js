@@ -29,6 +29,12 @@ header.on('receive', function (data) {
     if (count >= 6) {
         header.send(count - 1, grid, 0, {
             appendTo: document.querySelector('.header .grid'),
+            layoutSender: function (isAborted, items) {
+                synchronize();
+            },
+            layoutReceiver: function (isAborted, items) {
+                synchronize();
+            },
         });
     }
 });
@@ -36,20 +42,30 @@ header.on('receive', function (data) {
 grid.on('receive', function (data) {
     grid.refreshItems([data.item], true);
     grid.layout();
+    synchronize();
 });
 
 header.on('dragReleaseStart', function() {
     grid.refreshItems();
     grid.layout();
+    synchronize();
 });
 
 grid.on('dragReleaseStart', function() {
     grid.refreshItems();
     grid.layout();
+    synchronize();
 });
 
 function getAllGrids(item) {
     return [header, grid];
+}
+
+function synchronize() {
+    setTimeout(() => {
+        header.synchronize();
+        grid.synchronize();
+    });
 }
 
 document.querySelectorAll('.apple-tv-card .content').forEach((hyperlink) => {

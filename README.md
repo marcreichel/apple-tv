@@ -26,5 +26,4 @@ Things I may implement in the future.
 
 All known issues are listed below and may be addressed in the future.
 
-- After reordering the apps the focus order is not correct.
-
+_nothing known right now 🎉_
