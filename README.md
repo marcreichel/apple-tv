@@ -26,7 +26,5 @@ Things I may implement in the future.
 
 All known issues are listed below and may be addressed in the future.
 
-- When dragging an app to the "dock" there is a little layout shift due to the app title which is hidden for apps inside
-  the dock.
 - After reordering the apps the focus order is not correct.
 
