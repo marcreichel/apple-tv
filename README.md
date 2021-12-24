@@ -9,7 +9,7 @@ This is an experimental implementation of my [apple-tv-card](https://github.com/
 ## Features
 
 - Hover animation of the apps (thanks to my [apple-tv-card](https://github.com/marcreichel/apple-tv-card) package)
-- Drag and drop apps around
+- Drag and drop apps around (thanks to the [muuri.js](https://github.com/haltu/muuri) package)
 
 ## Demo
 
