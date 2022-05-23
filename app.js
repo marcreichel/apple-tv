@@ -29,12 +29,8 @@ header.on('receive', function (data) {
     if (count >= 6) {
         header.send(count - 1, grid, 0, {
             appendTo: document.querySelector('.header .grid'),
-            layoutSender: function (isAborted, items) {
-                synchronize();
-            },
-            layoutReceiver: function (isAborted, items) {
-                synchronize();
-            },
+            layoutSender: () => synchronize(),
+            layoutReceiver: () => synchronize(),
         });
     }
 });
@@ -43,6 +39,14 @@ grid.on('receive', function (data) {
     grid.refreshItems([data.item], true);
     grid.layout();
     synchronize();
+    const count = header.getItems().length;
+    if (count < 5) {
+        grid.send(0, header, count, {
+            appendTo: document.querySelector('.header .grid'),
+            layoutSender: () => synchronize(),
+            layoutReceiver: () => synchronize(),
+        });
+    }
 });
 
 header.on('dragReleaseStart', function() {
