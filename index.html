@@ -10,17 +10,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="//unpkg.com/apple-tv-card@latest/dist/main.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="app.css" rel="stylesheet">
     <script src="//unpkg.com/muuri/dist/muuri.min.js"></script>
     <script src="//unpkg.com/apple-tv-card@latest/dist/main.js" defer></script>
+
+    <!-- Font Awesome -->
     <script src="//unpkg.com/@fortawesome/fontawesome-free/js/regular.min.js"></script>
     <script src="//unpkg.com/@fortawesome/fontawesome-free/js/brands.min.js"></script>
     <script src="//unpkg.com/@fortawesome/fontawesome-free/js/fontawesome.min.js"></script>
+
+    <!-- Alpine Stuff -->
+    <script defer src="https://unpkg.com/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body>
-<div style="padding:2vw 2vw 0;">
-    <div style="display:flex;">
-        <div style="width:50%;padding:0 1vw;">
+<body x-data x-trap="true">
+<div class="p-[2vw]">
+    <div class="flex">
+        <div class="w-1/2 px-[1vw]">
             <div class="apple-tv-card-container">
                 <div class="apple-tv-card">
                     <a href="https://www.netflix.com/title/81028975" class="content" target="_blank"
@@ -31,7 +38,7 @@
                 </div>
             </div>
         </div>
-        <div style="width:50%;padding:0 1vw;">
+        <div class="w-1/2 px-[1vw]">
             <div class="apple-tv-card-container">
                 <div class="apple-tv-card">
                     <a href="https://www.netflix.com/title/81161626" class="content" target="_blank"
