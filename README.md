@@ -19,11 +19,5 @@ This is an experimental implementation of my [apple-tv-card](https://github.com/
 
 Things I may implement in the future.
 
-- Change the header part of the homescreen to content matching the recent hovered/focused app from the dock.
-- Persist the sorted apps to local storage.
-
-## Known issues
-
-All known issues are listed below and may be addressed in the future.
-
-_nothing known right now 🎉_
+- [Dynamic Header (#1)](https://github.com/marcreichel/apple-tv/issues/1)
+- [Store apps in local storage (#2)](https://github.com/marcreichel/apple-tv/issues/2)
