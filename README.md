@@ -17,7 +17,6 @@ This is an experimental implementation of my [apple-tv-card](https://github.com/
 
 ## Roadmap
 
-Things I may implement in the future.
+Things I may implement in the future may be found here:
 
-- [Dynamic Header (#1)](https://github.com/marcreichel/apple-tv/issues/1)
-- [Store apps in local storage (#2)](https://github.com/marcreichel/apple-tv/issues/2)
+[Roadmap](https://github.com/marcreichel/apple-tv/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement)
