@@ -17,6 +17,6 @@ This is an experimental implementation of my [apple-tv-card](https://github.com/
 
 ## Roadmap
 
-Things I may implement in the future may be found here:
+Things I may implement in the future can be found here:
 
 [Roadmap](https://github.com/marcreichel/apple-tv/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement)
