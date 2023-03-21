@@ -82,3 +82,33 @@ document.querySelectorAll('.apple-tv-card .content').forEach((hyperlink) => {
         }
     });
 });
+
+document.body.onload = () => {
+    let activeIconIndex = 0;
+    const icons = document.querySelectorAll('.content');
+
+    // add event listener to listen for arrow key presses
+    document.addEventListener('keydown', (event) => {
+        const key = event.key;
+        switch (key) {
+            case 'ArrowUp':
+            activeIconIndex = Math.max(activeIconIndex - 5, 0);
+            break;
+          case 'ArrowDown':
+            activeIconIndex = Math.min(activeIconIndex + 5, icons.length - 1);
+            break;
+          case 'ArrowLeft':
+            activeIconIndex = Math.max(activeIconIndex - 1, 0);
+            break;
+          case 'ArrowRight':
+            activeIconIndex = Math.min(activeIconIndex + 1, icons.length - 1);
+            break;
+        }
+
+        // unfocus all icons
+        icons.forEach(icon => icon.blur());
+
+        // focus the selected icon
+        icons[activeIconIndex].focus();   
+    });
+}
