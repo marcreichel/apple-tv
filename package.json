@@ -1,0 +1,12 @@
+{
+  "name": "apple-tv",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "author": {
+    "name": "Marc Reichel",
+    "url": "https://marcreichel.dev"
+  },
+  "license": "MIT"
+}
