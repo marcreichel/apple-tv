@@ -13,7 +13,7 @@ This is an experimental implementation of my [apple-tv-card](https://github.com/
 
 ## Demo
 
-[Live Demo](https://marcreichel.github.io/apple-tv)
+[Live Demo](https://kachbit.github.io/webtv/)
 
 ## Roadmap
 
