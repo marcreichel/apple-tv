@@ -41,7 +41,8 @@ grid.on('receive', function (data) {
     synchronize();
     const count = header.getItems().length;
     if (count < 5) {
-        grid.send(0, header, count, {
+        const itemIndex = data.toIndex ? 0 : 1;
+        grid.send(itemIndex, header, count, {
             appendTo: document.querySelector('.header .grid'),
             layoutSender: () => synchronize(),
             layoutReceiver: () => synchronize(),
@@ -109,6 +110,6 @@ document.body.onload = () => {
         icons.forEach(icon => icon.blur());
 
         // focus the selected icon
-        icons[activeIconIndex].focus();   
+        icons[activeIconIndex].focus();
     });
 }
